@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pizza {
+  background: white;
+  width: 45%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  position: relative;
+}
+
+.pizza img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex: 2;
+}
+
+.leftContainer {
+  margin-left: 1.5rem;
+  flex: 2;
+}
+
+.leftContainer h2 {
+  font-family: "Bebas Neue", cursive;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.leftContainer p {
+  font-family: "Bebas Neue", cursive;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.rightContainer {
+  flex: 3;
+}
+
+.rightContainer p {
+  margin: 0.5rem 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.buyBtn {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  border: none;
+  background: #333;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  /* border-radius: 0.5rem; */
+}
+
+.buyBtn:hover {
+  color: #333;
+  background: white;
+}
+
+button.cart {
+  border: none;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}
+
+.cart svg {
+  color: #333;
+}
